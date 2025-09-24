@@ -1,4 +1,15 @@
 // js/app.js
+// js/app.js (adicione isso no início)
+import { database } from './firebase-config.js';
+import { ref, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-database.js";
+
+// TESTE DE CONEXÃO
+console.log("Testando conexão com Firebase...");
+const testRef = ref(database, '.info/connected');
+onValue(testRef, (snap) => {
+  console.log("Status da conexão:", snap.val() ? "CONECTADO" : "DESCONECTADO");
+});
+
 import { database } from './firebase-config.js';
 import { ref, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-database.js";
 

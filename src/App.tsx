@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Lancamentos from "./pages/Lancamentos";
+import Quitacao from "./pages/Quitacao";
 import Cartoes from "./pages/Cartoes";
 import Usuarios from "./pages/Usuarios";
 import NotFound from "./pages/NotFound";
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="lancamentos" element={<Lancamentos />} />
+            <Route path="quitacao" element={<Quitacao />} />
             <Route path="cartoes" element={<Cartoes />} />
             <Route path="usuarios" element={<Usuarios />} />
           </Route>

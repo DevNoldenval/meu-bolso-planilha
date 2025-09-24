@@ -4,13 +4,15 @@ import {
   Plus, 
   CreditCard, 
   Users,
-  Wallet
+  Wallet,
+  Receipt
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Dashboard", to: "/", icon: LayoutDashboard },
   { name: "Lançamentos", to: "/lancamentos", icon: Plus },
+  { name: "Quitação", to: "/quitacao", icon: Receipt },
   { name: "Cartões", to: "/cartoes", icon: CreditCard },
   { name: "Usuários", to: "/usuarios", icon: Users },
 ];
